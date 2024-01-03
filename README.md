@@ -29,3 +29,6 @@ Refer https://github.com/xiongye77/aks/blob/main/create-sp-access-acr-docker-sec
 
 ![image](https://github.com/xiongye77/aks/assets/36766101/78c6dae5-2ee7-4bd7-a8de-c94161dd1d64)
 ![image](https://github.com/xiongye77/aks/assets/36766101/18e8e295-d60b-494e-8fea-fcc4d9a489f0)
+
+# AKS upgrade 
+![image](https://github.com/xiongye77/aks/assets/36766101/47876ec7-856c-4a45-817c-a20a444ee92d)
