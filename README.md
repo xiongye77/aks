@@ -39,3 +39,4 @@ Refer https://github.com/xiongye77/aks/blob/main/create-sp-access-acr-docker-sec
 # Azure Virtual Node
 Azure Kubernetes Virtual Nodes is a service offered by Microsoft Azure that allows Kubernetes cluster managers to deploy and manage their containerized workloads on a serverless infrastructure, without the need to manage and provision virtual machines.Azure Kubernetes virtual nodes work on an open-source Kubernetes Kubelet implementation called Virtual Kubelet. It is an open-source Kubernetes kubelet implementation that allows you to run your container workloads on various cloud providers, such as Azure Container Instances (ACI) and AWS Fargate.
 ![image](https://github.com/xiongye77/aks/assets/36766101/f641c882-491c-4167-9999-1fea60e015ae)
+![image](https://github.com/xiongye77/aks/assets/36766101/6991ddab-2e2d-4ef4-b515-78aced371c61)
