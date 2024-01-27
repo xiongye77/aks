@@ -40,3 +40,22 @@ Refer https://github.com/xiongye77/aks/blob/main/create-sp-access-acr-docker-sec
 Azure Kubernetes Virtual Nodes is a service offered by Microsoft Azure that allows Kubernetes cluster managers to deploy and manage their containerized workloads on a serverless infrastructure, without the need to manage and provision virtual machines.Azure Kubernetes virtual nodes work on an open-source Kubernetes Kubelet implementation called Virtual Kubelet. It is an open-source Kubernetes kubelet implementation that allows you to run your container workloads on various cloud providers, such as Azure Container Instances (ACI) and AWS Fargate.
 ![image](https://github.com/xiongye77/aks/assets/36766101/f641c882-491c-4167-9999-1fea60e015ae)
 ![image](https://github.com/xiongye77/aks/assets/36766101/6991ddab-2e2d-4ef4-b515-78aced371c61)
+
+
+
+# Azure subscription not register resource provider
+
+$AdminUserName = "labuser_74944_14531031@instructorwhizlabs.onmicrosoft.com"
+$AdminPassword = "3tm$5?cKl9MUS*"
+  
+#Variable for Pscredential object
+$SecurePassword = ConvertTo-SecureString $AdminPassword -AsPlainText -Force
+$credentials = New-Object System.Management.Automation.PSCredential($AdminUserName, $SecurePassword)
+   
+#Connect to Azure Active Directory
+Connect-AzAccount  –Credential $credentials
+![image](https://github.com/xiongye77/aks/assets/36766101/51882aed-c045-417a-8bcd-495b66d3b2f9)
+Connect-AzAccount 
+Install-Module -Name Az -AllowClobber -Scope AllUsers -Force 
+Get-AzResourceProvider -ListAvailable | Where-Object RegistrationState -eq "NotRegistered" | Select-Object ProviderNamespace, RegistrationState | Sort-Object ProviderNamespace
+![image](https://github.com/xiongye77/aks/assets/36766101/c8d2301d-d71e-4838-b68e-7e0ef148a2d1)
